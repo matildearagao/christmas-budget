@@ -1,0 +1,107 @@
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="styles.css">
+    
+    
+        <script src="app.js"></script>
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    
+        <title>Xtmas Gifts</title>
+    </head>
+    
+    <body>
+        <div class="jumbotron text-center">
+            <h1>Set your Xtmas Xpirit ON:</h1>
+    
+            <div class="col-11 mx-auto quote-container ">
+                <p class="text-muted"><span id="quote">Random Quotes to set your Xtmas Xpirit on! </span></p>
+                <button class="btn btn-secondary sq-green" id="generate-btn">GO!</button>
+                <div id="timercontainer">
+                    <p class="light">Xtmas time in:</p>
+                    <div id="timer"> </div>
+                </div>
+            </div>
+    
+    
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="card">
+    
+                        <h5 class="card-header text-center">Set your Budget and Gifts</h5>
+                        <div class="card-body">
+    
+                            <form id="budget" class="input-group">
+                                <input name="budget-input" class="form-control" type="number" placeholder="Total budget" />
+                                <button class="btn btn-secondary">add</button>
+                            </form>
+                            <form id="add-gift" class="input-group">
+    
+                                <input type="text" class="form-control" aria-label="Add a gift..." placeholder="Gift" />
+                                <input type="number" class="form-control" aria-label="price" placeholder="Price" />
+                                <button class="btn btn-secondary">add</button>
+                            </form>
+                            <form id="search-gifts" class="input-group">
+                                <input type="text" class="form-control" placeholder="Search gift..." />
+                            </form>
+                            <div id="gifts-list">
+                                <ul id="ulGifts"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <!-- 2nd col -->
+                <div class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <h5 class="card-header text-center">Control your Christmas Budget</h5>
+                        <div class="card-body">
+                            <div>
+                                <canvas id="myChart" style="height:300px; margin-bottom: 40px"></canvas>
+                            </div>
+                            <div class="card-deck">
+                                <div class="card">
+                                    <div id="divBudget" class="card-body sq">
+                                        <h6>Budget:</h6>
+                                        <span id="totalBudget">0</span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div id="divTotal" class="card-body sq sq-green">
+                                        <h6>Total Spent: </h6>
+                                        <span id="total"> 0 </span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div id="divLeftSpend" class="card-body sq sq-red">
+                                        <h6>Left to Spend: </h6>
+                                        <span id="leftSpend"> 0 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="/jquery-3.3.1.min.js"></script>
+    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    
+    
+    </body>
+    
+    </html>
